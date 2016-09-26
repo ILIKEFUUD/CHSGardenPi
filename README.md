@@ -1,4 +1,4 @@
-# CHSGardenPi
+# TRIGGERED
 
 Repository for the Clarksburg High School Raspberry Pi Garden Monitoring System 
 
