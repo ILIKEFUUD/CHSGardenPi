@@ -23,7 +23,7 @@ while True:
         #temperature
         [temp,hum] = grovepi.dht(dht_sensor_port, 1) #get temp and hum
         temp /= 10.0
-        print("Temperature: %f" %temp)
+        print("Temperature in Celcius: %.2f" %temp)
         time.sleep(.5)
 
         #light
