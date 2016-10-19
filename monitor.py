@@ -1,5 +1,6 @@
 """
 Rahul Shah
+
 PD 6 Internship with Mr. Sell
 
 monitor.py
@@ -11,16 +12,16 @@ import grovepi
 import time
 import requests
 import sys
+from grove_rgb_lcd import *
 
 
 #pi land settings
-
 room = 240
-slot_light = 15
-name_light = "Lamp Light"
+slot_light = 30
+name_light = "Lamp+Light"
 
 slot_temp = 22
-name_temp = "Inside Temp DHT22"
+name_temp = "Inside+Temp+DHT22"
 
 
 
@@ -38,30 +39,31 @@ light_baseurl = baseurl + "/" + str(room) + "/write/" + str(slot_light) + "?name
 temp_baseurl = baseurl + "/" + str(room) + "/write/" + str(slot_temp) + "?name=" + name_temp + "&value="
 
 
-
-
 while True:
     try:
 
         #temperature
         [temp,hum] = grovepi.dht(dht_sensor_port, 1) #get temp and hum
         temp /= 10.0
-        print("Temperature: %.2f" %temp)
-        
+        tempStr = "Temp: %.2f *C" %temp
+        print(tempStr)
+
 
         #light
         sensor_value = grovepi.analogRead(sensor)
+        lightStr = "Light: %d lux" %sensor_value
 
-        print ("sensor_value = %d" %sensor_value)
-        
-
+        print(lightStr)
         light_url = light_baseurl + "%0.1f" % sensor_value + "+lux"
         temp_url = temp_baseurl + "%0.1f" % temp + "+C"
 
         requests.get(light_url)
         requests.get(temp_url)
 
-        time.sleep(2)
+        setText(tempStr)
+        setRGB(0,128,64)
+        time.sleep(1)
+        setText(lightStr)
 
     except KeyboardInterrupt:
         print "Terminating"
@@ -71,11 +73,4 @@ while True:
     except:
         print "Unexpected error, continuing"
         print "sys.exc_info()[0]: ", sys.exc_info()[0]
-
-        
-
-
-
-
-
 
