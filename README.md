@@ -24,11 +24,11 @@ Obviously the pi program you wrote won't be useful if you always had to log in a
 
 My way around this was to edit the pi's rc.local file. In it you will find this line:
 
-    #python /home/Desktop/GrovePi/Software/Python/monitor.py &
+    '#python /home/Desktop/GrovePi/Software/Python/monitor.py &'
 
 Getting rid of the \# comment marker will result in the monitor.py program running as soon as the pi is booted on
 
-If you want to run your own program from boot just copy the statement above and change  monitor.py  to your file name. 
+If you want to run your own program from boot just copy the statement above and change 'monitor.py' to your file name. 
 Remember to keep the '&' at the end of the statement so that the program doesn't go rogue if the pi shuts off unexpectedly.
 
 
