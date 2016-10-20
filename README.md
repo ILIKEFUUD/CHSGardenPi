@@ -12,9 +12,9 @@ Written and maintained by:
 
 Future developers can use these resources that I found relevant while making this:
 
--ModMYPi moisture sensor + sending texts/email https://www.modmypi.com/blog/raspberry-pi-plant-pot-moisture-sensor-with-email-notification-tutorial
+*ModMYPi moisture sensor + sending texts/email https://www.modmypi.com/blog/raspberry-pi-plant-pot-moisture-sensor-with-email-notification-tutorial
 
--GrovePi github page https://github.com/DexterInd/GrovePi/
+*GrovePi github page https://github.com/DexterInd/GrovePi/
 
 This is using the GrovePi+ Starter Kit for Raspberry Pi
 
@@ -36,8 +36,9 @@ Remember to keep the '&' at the end of the statement so that the program doesn't
 
 In case you delete everything, don't cry it's right here.
 
-PuTTY - putty.org this is the windows shell we use for working with the pi since MCPS sadly uses windows computers 
-GrovePi github - https://github.com/DexterInd/GrovePi/ so you can re-clone if you mess up or there's an update
+*PuTTY - putty.org this is the windows shell we use for working with the pi since MCPS sadly uses windows computers 
+
+*GrovePi github - https://github.com/DexterInd/GrovePi/ so you can re-clone if you mess up or there's an update
 
 
 
