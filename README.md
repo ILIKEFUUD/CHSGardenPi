@@ -31,6 +31,8 @@ Getting rid of the \# comment marker will result in the monitor.py program runni
 If you want to run your own program from boot just copy the statement above and change 'monitor.py' to your file name. 
 Remember to keep the '&' at the end of the statement so that the program doesn't go rogue if the pi shuts off unexpectedly.
 
+*REMEMBER TO KEEP THE STATEMENT ABOVE THE COMMENTS IF YOU WANT A SCRIPT TO RUN BEFORE LOGIN/ON BOOT*
+
 
 #Getting started resources
 
