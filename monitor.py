@@ -7,7 +7,7 @@ monitor.py
 
 Using the Raspberry Pi, monitor the moisture, temperature, and light being given to the plant system
 """
-
+import subprocess
 import grovepi
 import time
 import requests
@@ -64,6 +64,11 @@ while True:
         setRGB(0,128,64)
         time.sleep(1)
         setText(lightStr)
+        
+        #when button pushed, shutdown
+        if(grovepi.digitalRead(button) == 1):
+            #subprocess.call("sudo shutdown -h now", shell = True)
+            setText("Shutting down...")
 
     except KeyboardInterrupt:
         print "Terminating"
