@@ -69,6 +69,8 @@ while True:
         if(grovepi.digitalRead(button) == 1):
             #subprocess.call("sudo shutdown -h now", shell = True)
             setText("Shutting down...")
+            setRGB(0,0,0)
+            setText("")
 
     except KeyboardInterrupt:
         print "Terminating"
