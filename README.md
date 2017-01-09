@@ -48,6 +48,26 @@ In case you delete everything, don't cry it's right here.
 
 * GrovePi github - https://github.com/DexterInd/GrovePi/ so you can re-clone if you mess up or there's an update
 
+#In case of SD card corruption
+
+No backup cards have been made, however it is very easy to transfer code back on to a new SD card. Here's what to do step by step if the card is corrupted.
+
+1) Take the SD card out
+2) Take the new SD card and put it into the Pi
+3) You need administrator access to set up the Pi. Either contact Ms. Bailey so you can use her laptop or **ask** to take the Pi home and use your computer
+4) Open up terminal on the computer
+5) Follow the directions here https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-occidentalis
+6) Now you must find the IP address of the pi. This requires doing a wlan grep 
+7) Write down the IP address you get. It should start with 10.234.something
+8) Plug the pi in at school and use the ip address you wrote down to log in!
+9) cd into the Desktop and ssh clone the GrovePi github directory 
+10) chmod +x the grove_rgb_lcd file since the pi uses the lcd monitor
+11) navigate to the python directory 
+12) touch monitor.py and paste in the code here from github! Or you can clone it in, whatever
+13) remember to go back to rc.local and add the line for the shutdown button!!!!
+14) run to class because this probably took all period to do
+
+
 
 
 
