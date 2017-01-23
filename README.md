@@ -50,7 +50,7 @@ In case you delete everything, don't cry it's right here.
 
 #In case of SD card corruption
 
-No backup cards have been made, however it is very easy to transfer code back on to a new SD card. Here's what to do step by step if the card is corrupted.
+No backup cards have been made, however it is very easy to transfer code back on to a new SD card. Here's what to do step by step if the card is corrupted. https://www.dexterindustries.com/howto/install-raspbian-for-robots-image-on-an-sd-card/
 
 1) Take the SD card out
 
